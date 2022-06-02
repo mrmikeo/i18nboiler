@@ -1,0 +1,39 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+
+      <h1 class="title">
+        {{ __("Hello World:") }} 
+      </h1>
+      <p class="subtitle">
+      	{{ __("Testing Translation") }} 
+      </p>
+      
+      <a href="?locale=en">EN</a> / <a href="?locale=de">DE</a> 
+      
+      <br /><br />
+      
+      Locale: {{ locale }} 
+
+{% endblock %}
+{% block javascripts %}
+<script>
+
+$(document).ready(function() {
+	
+	/*
+	var socket = io('', {query: ''});
+	
+  	socket.on('hello', function (data) { 
+
+
+
+  	});
+	*/
+    
+});    
+    
+</script>
+{% endblock %}
+
+
